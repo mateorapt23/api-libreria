@@ -50,7 +50,7 @@ jobs:
       - name: Probar conexión EC2
         uses: appleboy/ssh-action@v1.2.0
         with:
-          host: 16.59.106.156
+          host: ec2-16-59-106-156.us-east-2.compute.amazonaws.com
           username: ubuntu
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
